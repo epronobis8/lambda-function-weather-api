@@ -3,16 +3,16 @@
 https://home.openweathermap.org/users/sign_up
 
 ## To Deploy Infrastructure:
-Terraform Plan
-Terraform Apply
+- Terraform Plan
+- Terraform Apply
 
 ### Resources Created:
-2 Lambda Functions
-1 Lambda Roles & Permissions for CloudWatch & Parameter Store
-SSM Paramter
-VPC including Nat Gateway, IGW, SG, NACL, Routes Tables, Public Subnets, Private Subnet, etc.
+- 2 Lambda Functions
+- 1 Lambda Roles & Permissions for CloudWatch & Parameter Store
+- SSM Paramter
+- VPC including Nat Gateway, IGW, SG, NACL, Routes Tables, Public Subnets, Private Subnet, etc.
 EventBridge scheduler to Kick-off Lambda Functions
-CloudWatch Logs
+- CloudWatch Logs
 
 ## Lambda Deployed in a VPC
 If you created and specify a VPC for a Lambda Function, you are responsible for the configuration of the VPC including network access and security rules within the VPC. The VPC is visible to developers and monitoring is done at the VPC level. 
